@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink, Link, useLocation, useNavigate } from 'react-router-dom';
 import { Menu, X, Instagram, Linkedin, Mail, Film } from 'lucide-react';
-import { NAV_ITEMS, SOCIAL_LINKS } from '../constants';
+import { NAV_ITEMS, SOCIAL_LINKS, BRAND } from '../constants';
 
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -46,10 +46,10 @@ const Header: React.FC = () => {
             onClick={handleLogoClick}
             className="font-serif text-lg sm:text-2xl md:text-3xl tracking-tight text-dark font-semibold cursor-pointer hover:text-gold-hover transition-colors whitespace-nowrap"
           >
-            ZIBUYILE GUMEDE
+            {BRAND.name}
           </a>
           <span className="font-sans text-[9px] sm:text-[10px] md:text-xs tracking-[0.15em] md:tracking-[0.2em] text-gray-500 uppercase mt-0.5 md:mt-1">
-            Director of Photography
+            {BRAND.tagline}
           </span>
         </div>
 

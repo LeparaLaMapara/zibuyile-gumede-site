@@ -10,10 +10,10 @@ const Contact: React.FC = () => {
         <div className="text-center mb-20">
           <h2 className="font-serif text-4xl md:text-5xl mb-8 text-dark">Contact.</h2>
           <div className="space-y-3 font-sans text-sm md:text-base tracking-wide text-dark">
-            <a href="mailto:zibuyilegumede360@gmail.com" className="block hover:text-gold transition-colors">
-              zibuyilegumede360@gmail.com
+            <a href={`mailto:${SOCIAL_LINKS.email}`} className="block hover:text-gold transition-colors">
+              {SOCIAL_LINKS.email}
             </a>
-            <p className="block">+27 (0)79 531 4422</p>
+            <p className="block">{SOCIAL_LINKS.phone}</p>
           </div>
           
           <div className="flex justify-center space-x-8 mt-8">
@@ -55,19 +55,20 @@ const Contact: React.FC = () => {
         {/* Magazine Feature - Full Width Card */}
         <div className="mb-24 relative w-full aspect-[16/9] md:aspect-[21/9] bg-gray-900 group overflow-hidden">
            <img 
-             src="/public/media/others/mentions_1.png" 
+             src="media/others/mentions_1.png" 
              alt="Crew on hill" 
+             loading="lazy"
              className="w-full h-full object-cover opacity-70 group-hover:scale-105 transition-transform duration-1000"
            />
            <div className="absolute inset-0 p-8 md:p-12 flex flex-col justify-between">
               <div className="text-white/80 text-[10px] md:text-xs font-bold tracking-widest uppercase border-l-2 border-gold pl-3">
-                 Shooting Summary <br/> Cinematographers Round-Up
+                 Shooting Summary <br/> Cinematographers We Love Working With
               </div>
               
               <div className="max-w-2xl">
-                 <h2 className="text-white font-serif text-4xl md:text-7xl italic mb-4">Sunshine Co</h2>
+                 <h2 className="text-white font-serif text-4xl md:text-7xl italic mb-4">Sunshine Co.</h2>
                  <p className="text-white/90 text-xs md:text-sm font-light leading-relaxed max-w-lg border-l border-white/30 pl-4">
-                    We loved meeting everyone and learning together at The Plug.This week we’re showing off some of our workshop attendees starting with Zibuyile Gumede. The Plug Issue 011  
+                    We loved meeting everyone and learning together at The Plug. This week we’re showing off some of our workshop attendees starting with Zibuyile Gumede. The Plug Issue 011  
                  </p>
               </div>
            </div>
@@ -82,6 +83,7 @@ const Contact: React.FC = () => {
                    <img 
                       src={img} 
                       alt={`On Set ${idx + 1}`} 
+                      loading="lazy"
                       className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
                    />
                 </div>

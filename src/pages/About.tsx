@@ -60,15 +60,15 @@ const About: React.FC = () => {
                {/* Poster */}
                <div className="md:col-span-3">
                   <div className="aspect-[2/3] bg-gray-200">
-                    <img src="/public/media/others/best_movie_2.png" alt="Poster" className="w-full h-full object-cover grayscale" />
+                    <img src="media/others/best_movie_2.png" alt="Poster" loading="lazy" className="w-full h-full object-cover grayscale" />
                   </div>
                </div>
                
                {/* Content */}
                <div className="md:col-span-9">
                   <div className="grid grid-cols-2 gap-4 mb-6">
-                     <img src="/public/media/others/best_movie_1.png" className="w-full h-48 object-cover" alt="Still 1" />
-                     <img src="/public/media/others/best_movie_4.png" className="w-full h-48 object-cover" alt="Still 2" />
+                     <img src="media/others/best_movie_1.png" loading="lazy" className="w-full h-48 object-cover" alt="Still 1" />
+                     <img src="media/others/best_movie_4.png" loading="lazy" className="w-full h-48 object-cover" alt="Still 2" />
                   </div>
                   <h4 className="font-bold text-sm tracking-widest mb-2">SYNOPSIS</h4>
                   <p className="text-sm text-gray-600 mb-6">
